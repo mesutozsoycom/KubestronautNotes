@@ -1,0 +1,46 @@
+# Kubectl alias
+alias k='kubectl'
+
+# Podları listele
+alias kga='kubectl get all'
+alias kgp='kubectl get pods -o wide'
+alias kgs='kubectl get svc'
+alias kgn='kubectl get nodes'
+alias kgi='kubectl get ingress'
+
+# Pod, Deployment ve Service yaratma
+alias krun='kubectl run'
+alias kex='kubectl exec -it'
+alias klog='kubectl logs -f'
+
+# YAML çıktısı almak için
+alias kgpy='kubectl get pods -o yaml'
+alias kgdy='kubectl get deployments -o yaml'
+alias kgsy='kubectl get svc -o yaml'
+
+# Pod silme
+alias kdp='kubectl delete pod'
+
+# Namespace değiştirme
+alias kns='kubectl config set-context --current --namespace'
+
+# Kubeconfig kullanımı
+alias kctx='kubectl config use-context'
+alias kcfg='kubectl config get-contexts'
+
+# Kısa YAML oluşturma komutları
+alias kdpoy='kubectl delete pod -o yaml --dry-run=client'
+alias kcpy='kubectl create -f'
+
+# Kustomize desteği
+alias kapply='kubectl apply -k .'
+
+# Kapsamlı listeleme (describe)
+alias kdesc='kubectl describe'
+alias kdesp='kubectl describe pod'
+alias kdesd='kubectl describe deployment'
+
+# Edit işlemleri
+alias ked='kubectl edit'
+alias kep='kubectl edit pod'
+alias kedep='kubectl edit deployment'
